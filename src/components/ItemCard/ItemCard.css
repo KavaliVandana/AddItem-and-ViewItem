@@ -1,0 +1,50 @@
+.item-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-card__image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.item-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.item-card:hover .item-card__image {
+  transform: scale(1.05);
+}
+
+.item-card__content {
+  padding: 1rem;
+}
+
+.item-card__title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.item-card__type {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  background: #f0f4ff;
+  color: #6e8efb;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
